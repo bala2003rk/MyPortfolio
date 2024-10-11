@@ -1,0 +1,36 @@
+#contact {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  #contact h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  #contact div {
+    margin-bottom: 20px;
+  }
+  
+  #contact h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  #contact ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #contact li {
+    margin-bottom: 10px;
+  }
+  
+  #contact a {
+    text-decoration: none;
+    color: #337ab7;
+  }
+  
+  #contact a:hover {
+    color: #23527c;
+  }
