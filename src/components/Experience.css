@@ -1,0 +1,167 @@
+.section {
+  padding: 6rem 4rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-inner { max-width: 900px; }
+
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+}
+
+.label-line {
+  width: 24px;
+  height: 1px;
+  background: var(--gold);
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.1;
+  margin-bottom: 4rem;
+  letter-spacing: -0.01em;
+}
+
+/* Experience.css — find .section-title em */
+.section-title em {
+  font-style: normal;   /* remove italic */
+  font-weight: 700;     /* make consistent */
+  color: var(--ink);    /* remove the muted color */
+}
+
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 2rem;
+}
+
+.timeline-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4px;
+}
+
+.marker-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--gold);
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.marker-dot--edu {
+  background: transparent;
+  border: 2px solid var(--gold);
+}
+
+.marker-line {
+  flex: 1;
+  width: 1px;
+  background: var(--border);
+  margin-top: 0.5rem;
+}
+
+.timeline-content {
+  padding-bottom: 1rem;
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.timeline-role {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--ink);
+  margin-bottom: 0.25rem;
+}
+
+.timeline-company {
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  color: var(--ink-muted);
+}
+
+.timeline-date {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  white-space: nowrap;
+  font-weight: 500;
+  padding: 0.3rem 0.75rem;
+  border: 1px solid var(--border);
+  background: var(--gold-pale);
+}
+
+.timeline-bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.timeline-bullets li {
+  font-size: 0.875rem;
+  color: var(--ink-soft);
+  line-height: 1.7;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.timeline-bullets li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-size: 0.7rem;
+  top: 0.3rem;
+}
+
+.timeline-meta {
+  font-size: 0.875rem;
+  color: var(--ink-muted);
+}
+
+.timeline-meta strong { color: var(--ink); }
+
+.experience-section {
+  border-top: 1px solid var(--border-soft);
+}
+
+@media (max-width: 768px) {
+  .section { padding: 3.5rem 1.25rem; }
+  .section-title { font-size: clamp(1.6rem, 6vw, 2.5rem); margin-bottom: 2.5rem; }
+  .timeline-item { grid-template-columns: 20px 1fr; gap: 0.75rem; }
+  .timeline-header { flex-direction: column; gap: 0.5rem; }
+  .timeline-role { font-size: 1.15rem; }
+  .timeline-date { align-self: flex-start; }
+}

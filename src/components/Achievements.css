@@ -1,0 +1,152 @@
+.achievements-section {
+  background: var(--ink-soft);
+  padding: 6rem 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.achievements-section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 50% 60% at 80% 20%, rgba(201,168,76,0.07) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 40% at 10% 80%, rgba(201,168,76,0.04) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.ach-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.ach-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5px;
+  background: rgba(201,168,76,0.12);
+  margin-bottom: 3rem;
+}
+
+.ach-stat {
+  background: var(--ink-soft);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  transition: background var(--transition-fast);
+}
+
+.ach-stat:hover { background: rgba(201,168,76,0.06); }
+
+.ach-num {
+  font-family: var(--font-display);
+  font-size: 2.8rem;
+  font-weight: 300;
+  color: var(--gold);
+  line-height: 1;
+}
+
+.ach-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cream);
+  font-weight: 400;
+}
+
+.ach-sub {
+  font-size: 0.7rem;
+  color: rgba(245,240,232,0.4);
+  letter-spacing: 0.04em;
+}
+
+.ach-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 3rem;
+}
+
+.badge-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  color: rgba(245,240,232,0.7);
+  background: rgba(201,168,76,0.08);
+  border: 1px solid rgba(201,168,76,0.15);
+  padding: 0.5rem 1rem;
+  transition: all var(--transition-fast);
+  letter-spacing: 0.04em;
+}
+
+.badge-item:hover {
+  border-color: rgba(201,168,76,0.4);
+  color: var(--gold-light);
+}
+
+.badge-icon { font-size: 0.9rem; }
+
+.certs-heading {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--cream);
+  margin-bottom: 1.25rem;
+  font-style: italic;
+}
+
+.certs-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.cert-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid rgba(201,168,76,0.1);
+  transition: border-color var(--transition-fast);
+}
+
+.cert-item:hover { border-color: rgba(201,168,76,0.3); }
+
+.cert-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold);
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+
+.cert-title {
+  font-size: 0.85rem;
+  color: var(--cream);
+  font-weight: 400;
+  margin-bottom: 0.2rem;
+}
+
+.cert-issuer {
+  font-size: 0.7rem;
+  color: rgba(245,240,232,0.4);
+  letter-spacing: 0.06em;
+}
+
+@media (max-width: 768px) {
+  .achievements-section { padding: 3.5rem 1.25rem; }
+  .ach-stats { grid-template-columns: repeat(2, 1fr); }
+  .ach-num { font-size: 2rem; }
+  .ach-badges { gap: 0.5rem; }
+  .badge-item { font-size: 0.72rem; padding: 0.4rem 0.75rem; }
+  .certs-list { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .ach-stats { grid-template-columns: 1fr 1fr; gap: 1px; }
+}
