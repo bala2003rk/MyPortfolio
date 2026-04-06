@@ -4,7 +4,7 @@ const skillGroups = [
   {
     category: 'Languages',
     icon: '{ }',
-    skills: ['Java', 'JavaScript', 'Node.js', 'C']
+    skills: ['Java', 'JavaScript', 'Node.js', 'C', 'Python']
   },
   {
     category: 'Frameworks',
@@ -19,7 +19,7 @@ const skillGroups = [
   {
     category: 'Cloud & DevOps',
     icon: '◈',
-    skills: ['Vercel', 'Render', 'MongoDB Atlas', 'GitHub Actions', 'Cloudinary']
+    skills: ['Vercel', 'Render', 'MongoDB Atlas', 'GitHub Actions']
   },
   {
     category: 'Tools',

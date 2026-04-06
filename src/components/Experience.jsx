@@ -26,7 +26,7 @@ export default function Experience() {
                 <span className="timeline-date">Apr 2024 — Present</span>
               </div>
               <ul className="timeline-bullets">
-                <li>Conducted hands-on workshops across <strong>15+ colleges</strong> teaching MERN Stack, Web Development, and DSA (C & Java).</li>
+                <li>Conducted hands-on workshops across <strong>25+ colleges</strong> teaching MERN Stack, Web Development, and DSA (C & Java).</li>
                 <li>Trained <strong>2,500+ students</strong> with practical projects, coding sessions, and live deployments.</li>
                 <li>Built and maintained full-stack applications using Java Spring Boot and MERN stack as part of curriculum.</li>
                 <li>Mentored students on Git, GitHub, REST APIs, and real-world software development practices.</li>
@@ -46,7 +46,7 @@ export default function Experience() {
                 </div>
                 <span className="timeline-date">2020 — 2024</span>
               </div>
-              <p className="timeline-meta">CGPA: <strong>7.7 / 10</strong></p>
+              <p className="timeline-meta">CGPA: <strong>77 %</strong></p>
             </div>
           </div>
         </div>

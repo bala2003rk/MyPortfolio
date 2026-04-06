@@ -38,7 +38,7 @@ export default function Hero() {
           </div>
           <div className="meta-divider" />
           <div className="meta-item">
-            <span className="meta-num">525+</span>
+            <span className="meta-num">1000+</span>
             <span className="meta-label">Problems Solved</span>
           </div>
           <div className="meta-divider" />
