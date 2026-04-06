@@ -39,17 +39,17 @@ export default function Achievements() {
         </div>
 
         <div className="ach-badges reveal">
-          <div className="badge-item">
+          {/* <div className="badge-item">
             <span className="badge-icon">🏅</span>
             <span>50 Days Badge 2026</span>
-          </div>
+          </div> */}
           <div className="badge-item">
             <span className="badge-icon">🏆</span>
-            <span>7 LeetCode Badges</span>
+            <span>Multiple LeetCode Contests & Badges</span>
           </div>
           <div className="badge-item">
             <span className="badge-icon">📌</span>
-            <span>CodeChef Starters 232 — 8 problems solved</span>
+            <span>CodeChef Starters Contests and Badges</span>
           </div>
           <div className="badge-item">
             <span className="badge-icon">🔗</span>
